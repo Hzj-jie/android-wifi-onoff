@@ -10,6 +10,8 @@
         <activity android:name=".WifiOnActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Wifi On"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -21,6 +23,8 @@
         <activity android:name=".WifiOffActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Wifi Off"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
