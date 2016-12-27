@@ -8,13 +8,25 @@ import android.os.Process;
 
 public abstract class WifiActivity extends Activity
 {
+  public static final boolean isOn(Context context) {
+    WifiManager manager =
+        (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+    return manager.isWifiEnabled();
+  }
+
   @Override
   protected final void onCreate(Bundle bundle)
   {
     super.onCreate(bundle);
-    WifiManager manager =
-      (WifiManager) getSystemService(Context.WIFI_SERVICE);
-    manager.setWifiEnabled(value());
+    // Wifi Ap On == Wifi On
+    // Wifi Off == Wifi Ap Off
+    // So only change wifi state when AP is off.
+    if (!WifiApActivity.isOn(this))
+    {
+      WifiManager manager =
+        (WifiManager) getSystemService(Context.WIFI_SERVICE);
+      manager.setWifiEnabled(value());
+    }
     finish();
   }
 

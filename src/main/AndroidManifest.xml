@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.gemini.wifi_onoff"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0">
 
     <uses-sdk android:minSdkVersion="4" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <application android:icon="@drawable/blank">
         <activity android:name=".WifiOnActivity"
             android:theme="@android:style/Theme.NoDisplay"
@@ -29,6 +31,58 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiOffActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiApOnActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi AP On"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiApOnActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiApOffActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi AP Off"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiApOffActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiForceOnActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi Force On"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiForceOnActivity" />
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WifiForceOffActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="Wifi Force Off"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".WifiForceOffActivity" />
                 <action android:name="android.intent.action.MAIN" /> 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
