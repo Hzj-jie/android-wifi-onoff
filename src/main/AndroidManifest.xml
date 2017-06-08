@@ -18,7 +18,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiOnActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -31,7 +31,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiOffActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,7 +44,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiApOnActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -57,7 +57,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiApOffActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -70,7 +70,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiForceOnActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -83,7 +83,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name=".WifiForceOffActivity" />
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
