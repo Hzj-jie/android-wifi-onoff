@@ -1,0 +1,4 @@
+This application requires ACCESS_WIFI_STATE, CHANGE_WIFI_STATE and
+WRITE_SETTINGS permissions for its designed functionality, turn on or off the
+device wifi.
+This application does not collect, store or send any data for any purpose.
